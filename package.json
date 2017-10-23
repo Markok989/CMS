@@ -1,0 +1,19 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markok989/CMS.git"
+  },
+  "author": "Marko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Markok989/CMS/issues"
+  },
+  "homepage": "https://github.com/Markok989/CMS#readme"
+}
