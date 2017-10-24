@@ -1,39 +1,44 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
-// import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 const Header = ({ loading }) => {
     return (
-        <div>
-            <nav class="nav-extended">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Logo</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="sass.html">Sass</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
-                    </ul>
-                </div>
-                <div class="nav-content">
-                    <ul class="tabs tabs-transparent">
-                        <li class="tab"><a href="#test1">Test 1</a></li>
-                        <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-                        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-                        <li class="tab"><a href="#test4">Test 4</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div id="test1" class="col s12">Test 1</div>
-            <div id="test2" class="col s12">Test 2</div>
-            <div id="test3" class="col s12">Test 3</div>
-            <div id="test4" class="col s12">Test 4</div>
-        </div>
+        <Navbar inverse collapseOnSelect>
+            <Navbar.Header>
+                <Navbar.Brand>
+                    <Link to="/" activeClassName="active">CMS</Link>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+                <Nav>
+                    <NavItem >
+                        <IndexLink to="/" activeClassName="active">
+                            Home
+                    </IndexLink>
+                    </NavItem>
+                    <NavItem >
+                        <Link to="courses" activeClassName="active">
+                            Courses
+                        </Link>
+                    </NavItem>
+                    {/* <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                        <MenuItem eventKey={3.1}>Action</MenuItem>
+                        <MenuItem eventKey={3.2}>Another action</MenuItem>
+                        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                        </NavDropdown>*/
+                    }
+                </Nav>
+               {/* <Nav pullRight>
+                    <NavItem eventKey={1} href="#">Link Right</NavItem>
+                    <NavItem eventKey={2} href="#">Link Right</NavItem>
+                </Nav>
+               */}
+            </Navbar.Collapse>
+        </Navbar>
     );
 };
 
