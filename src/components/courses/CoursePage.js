@@ -1,18 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router';
 
-class Courses extends React.Component {
+class CoursePage extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Courses List</h1>
-        <br/>
+      <div className="jumbotron">
+        <h2>Course Name</h2>
+        <p>Course Lessons</p>
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -23,9 +21,6 @@ class Courses extends React.Component {
             </div>
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -36,9 +31,6 @@ class Courses extends React.Component {
             </div>
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -54,9 +46,6 @@ class Courses extends React.Component {
           <div className="row">
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -67,9 +56,6 @@ class Courses extends React.Component {
             </div>
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -80,9 +66,6 @@ class Courses extends React.Component {
             </div>
             <div className="col-sm-4">
               <div className="panel panel-primary">
-                <div className="panel-heading">
-                  Course
-                </div>
                 <div className="panel-body">
                   picture/text
                 </div>
@@ -93,10 +76,9 @@ class Courses extends React.Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
 }
 
-export default Courses;
+export default CoursePage;

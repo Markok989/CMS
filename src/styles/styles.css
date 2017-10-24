@@ -14,5 +14,13 @@ Navbar{
     padding-top: 20px;
 }
 Navbar.active{
-    color: blue;
+    color: rgb(153, 153, 245);
 }
+
+/*
+.banner{
+    background: url('./photos/course-banner.jpg');
+    height: 500px;
+    width: 400px;
+}
+*/

@@ -23,6 +23,21 @@ const Header = ({ loading }) => {
                             Courses
                         </Link>
                     </NavItem>
+                    <NavItem >
+                        <Link to="course" activeClassName="active">
+                            Courses Page
+                        </Link>
+                    </NavItem>
+                    <NavItem >
+                        <Link to="lesson" activeClassName="active">
+                            Lesson Page
+                        </Link>
+                    </NavItem>
+                    <NavItem >
+                        <Link to="about" activeClassName="active">
+                            About Page
+                        </Link>
+                    </NavItem>
                     {/* <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                         <MenuItem eventKey={3.1}>Action</MenuItem>
                         <MenuItem eventKey={3.2}>Another action</MenuItem>
