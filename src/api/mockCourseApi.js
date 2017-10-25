@@ -5,6 +5,13 @@ const courses = [
         id: "javascript-building-applications",
         title: "Building Applications in JavaScript",
         category: "JavaScript"
+      /*
+        lesssons: {
+            lessonID: "1",
+            lesson: "Name",
+            content: "Content of this lessson"
+        }
+        */
     },
     {
         id: "java-building-applications",

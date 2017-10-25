@@ -1,6 +1,14 @@
 import React, { PropTypes } from 'react';
 
 class CoursesGrid extends React.Component {
+
+  courseRow(course, index) {
+    return (
+      <div key={index}>
+        {course.title}
+      </div>);
+  }
+
   render() {
     return (
       <div>
