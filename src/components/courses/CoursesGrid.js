@@ -4,8 +4,7 @@ class CoursesGrid extends React.Component {
   render() {
     return (
       <div>
-        <h1>Courses List</h1>
-        <br/>
+        <br />
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
