@@ -5,13 +5,20 @@ const courses = [
         id: "javascript-building-applications",
         title: "Building Applications in JavaScript",
         category: "JavaScript"
-      /*
-        lesssons: {
+       /* lesssons: [
+            {
             lessonID: "1",
-            lesson: "Name",
-            content: "Content of this lessson"
+            lessonNo: "1",
+            lessonTitle: "test Building Applications in JavaScript",
+            cotent: "JavaScript"
+        },
+        {
+            lessonID: "1",
+            lessonNo: "1",
+            lessonTitle: "test Building Applications in JavaScript",
+            cotent: "JavaScript"
         }
-        */
+        ]*/
     },
     {
         id: "java-building-applications",
@@ -22,6 +29,16 @@ const courses = [
         id: "c#-building-applications",
         title: "Building Applications in C#",
         category: "C#"
+    },
+    {
+        id: "Building-WebSite-in-HTML",
+        title: "Building WebSite in HTML",
+        category: "HTML"
+    },
+    {
+        id: "Design-WebSite-with-Bootstrap",
+        title: "Design WebSite with Bootstrap",
+        category: "HTML, Bootstrap"
     },
     {
         id: "react-redux-building-applications",

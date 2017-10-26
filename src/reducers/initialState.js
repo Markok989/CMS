@@ -1,4 +1,5 @@
 export default {
     courses: [],
-    lessons: []
+    lessons: [],
+    quizzes: []
 };

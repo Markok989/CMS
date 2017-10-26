@@ -5,6 +5,7 @@ import HomePage from './components/home/HomePage';
 import Courses from './components/courses/Courses';
 import CoursePage from './components/courses/CoursePage';
 import LessonPage from './components/courses/LessonPage';
+import QuizPage from './components/courses/QuizPage';
 import AboutPage from './components/about/AboutPage';
 
 export default (
@@ -13,6 +14,7 @@ export default (
         <Route path="courses" component={Courses} />
         <Route path="course" component={CoursePage} />
         <Route path="lesson" component={LessonPage} />
+        <Route path="quiz" component={QuizPage} />
         <Route path="about" component={AboutPage} />
     </Route>
 );

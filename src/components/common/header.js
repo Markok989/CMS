@@ -34,6 +34,11 @@ const Header = () => {
                         </Link>
                     </NavItem>
                     <NavItem >
+                        <Link to="quiz" activeClassName="active">
+                            Quiz Page
+                        </Link>
+                    </NavItem>
+                    <NavItem >
                         <Link to="about" activeClassName="active">
                             About Page
                         </Link>

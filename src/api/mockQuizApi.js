@@ -1,12 +1,23 @@
 import delay from './delay';
 
-const lessons = [
+const quizzes = [
     {
-        lessonId: "javascript-building-applications",
-        lessonTitle: "test Building Applications in JavaScript",
+        quizId: "quz-javascript-building-applications",
+        quizTitle: "Quiz Building Applications in JavaScript",
         cotent: "JavaScript",
-        lessonNo: "1"
-    },
+        questions: [
+            {
+                questionId: "1",
+                question: "Question",
+                answers: [{
+                    answerId: "1",
+                    answer: "Answer"
+                }
+                ]
+            }
+        ]
+    }
+    /*
     {
         lessonId: "java-building-applications",
         lessonTitle: "test Building Applications in Java",
@@ -16,15 +27,16 @@ const lessons = [
     {
         lessonId: "c#-building-applications",
         lessonTitle: "test Building Applications in C#",
-        cotent: "C#", 
+        cotent: "C#",
         lessonNo: "3"
     },
     {
         lessonId: "react-redux-building-applications",
         lessonTitle: "test Building Applications in React and Redux",
-        cotent: "JavaScript", 
+        cotent: "JavaScript",
         lessonNo: "4"
     }
+    */
 ];
 
 function replaceAll(str, find, replace) {
@@ -32,18 +44,18 @@ function replaceAll(str, find, replace) {
 }
 
 //This would be performed on the server in a real app. Just stubbing in.
-const generateId = (lesson) => {
-    return replaceAll(lesson.lessonTitle, ' ', '-');
+const generateId = (quiz) => {
+    return replaceAll(quiz.quizTitle, ' ', '-');
 };
 
-class LessonApi {
-    static getAllLessons() {
+class QuizApi {
+    static getAllQuizzes() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(Object.assign([], lessons));
+                resolve(Object.assign([], quizzes));
             }, delay);
         });
     }
 }
 
-export default LessonApi;
+export default QuizApi;

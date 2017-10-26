@@ -8,8 +8,11 @@ class Courses extends React.Component {
     super(props, context);
 
     this.state = {
-      course: { title: null },
-      lesson: { lessonTitle: null }
+      course: {
+        title: null,
+        category: null,
+        lessonTitle: null
+      }
     };
   }
 
@@ -17,14 +20,22 @@ class Courses extends React.Component {
     return (
       <div key={index}>
         {course.title}
-      </div>);
+      </div>
+    );
   }
-
-  lessonRow(lesson, index) {
+  categoryRow(course, index) {
     return (
       <div key={index}>
-        {lesson.lessonTitle}
-      </div>);
+        {course.category}
+      </div>
+    );
+  }
+  lessonTitleRow(course, index) {
+    return (
+      <div key={index}>
+        {course.lessons.lessonTitle}
+      </div>
+    );
   }
 
 
@@ -35,7 +46,9 @@ class Courses extends React.Component {
         <CoursesGrid />
         {this.props.courses.map(this.courseRow)}
         <br />
-        {this.props.lessons.map(this.lessonRow)}
+        {this.props.courses.map(this.categoryRow)}
+        <br />
+        <br />
       </div>
     );
   }
@@ -44,13 +57,13 @@ class Courses extends React.Component {
 Courses.propTypes = {
   dispatch: PropTypes.func.isRequired,
   courses: PropTypes.array.isRequired,
-  lessons: PropTypes.array.isRequired
+  lessons: PropTypes.array.isRequired,
+  lessonTitle: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
   return {
-    courses: state.courses,
-    lessons: state.lessons
+    courses: state.courses
   };
 }
 
