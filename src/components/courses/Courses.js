@@ -67,6 +67,13 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
+/*
+function mapDispatchtoProps(dispatch) {
+  return {
+
+  }
+}
+*/
 export default connect(mapStateToProps)(Courses);
 
 //, mapDispatchtoProps, ako nema automtski se pravi
