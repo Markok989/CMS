@@ -8,7 +8,7 @@ const quizzes = [
     questions: [
       {
         id: "1",
-        question: "Question",
+        question: "Question 1",
         answers: [
           {
             questionId: "1",
@@ -32,7 +32,7 @@ const quizzes = [
       },
       {
         id: "2",
-        question: "Question",
+        question: "Question 2",
         answers: [
           {
             questionId: "2",
@@ -56,7 +56,7 @@ const quizzes = [
       },
       {
         id: "3",
-        question: "Question",
+        question: "Question 3",
         answers: [
           {
             questionId: "3",

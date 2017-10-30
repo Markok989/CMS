@@ -1,52 +1,23 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import CoursesGrid from './CoursesGrid';
-import * as courseActions from '../../actions/courseAction';
+import * as courseActions from '../../actions/coursesAction';
+import CourseCard from './CoursesCard';
 
 class Courses extends React.Component {
   constructor(props, context) {
     super(props, context);
-
-    this.state = {
-      course: {
-        title: null,
-        category: null,
-        lessonTitle: null
-      }
-    };
-  }
-
-  courseRow(course, index) {
-    return (
-      <div key={index}>
-        {course.title}
-      </div>
-    );
-  }
-  categoryRow(course, index) {
-    return (
-      <div key={index}>
-        {course.category}
-      </div>
-    );
-  }
-  lessonTitleRow(course, index) {
-    return (
-      <div key={index}>
-        {course.lessons.lessonTitle}
-      </div>
-    );
   }
 
 
   render() {
+    const { courses, course } = this.props;
+
     return (
       <div>
         <h1>All Courses</h1>
-        <CoursesGrid />
-        {this.props.courses.map(this.courseRow)}
-        <br />
-        {this.props.courses.map(this.categoryRow)}
+        <div>
+          <CourseCard courses={courses} />
+        </div>
         <br />
         <br />
       </div>
@@ -55,10 +26,8 @@ class Courses extends React.Component {
 }
 
 Courses.propTypes = {
-  dispatch: PropTypes.func.isRequired,
   courses: PropTypes.array.isRequired,
-  lessons: PropTypes.array.isRequired,
-  lessonTitle: PropTypes.array.isRequired
+  course: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {

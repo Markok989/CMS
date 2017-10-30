@@ -15,7 +15,6 @@ const Question = ({
             {question.answers.map((answer, i) =>
               <Panel>
                 <li key={`${index}-${i}`}>
-                  {console.log(answer)}
                   <input type="radio" name={`question_${index}`} id={`question_${index}_answer_${i}`}
                          defaultChecked={false} value={i} onChange={onAnswerSelected}/>
                   {' '}
@@ -31,6 +30,6 @@ const Question = ({
       </ButtonToolbar>
     </div>
   );
-}
+};
 
 export default Question;

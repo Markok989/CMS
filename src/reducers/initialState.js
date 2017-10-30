@@ -1,5 +1,7 @@
 export default {
-    courses: [],
-    lessons: [],
-    quizzes: []
+  courses: [],
+  quizzes: [],
+  coursePages: [],
+  jsLists: [],
+  jsChapters: []
 };
