@@ -6,14 +6,6 @@ export function loadCoursePagesSuccess(coursePages) {
   return {type: types.LOAD_COURSEPAGES_SUCCESS, coursePages};
 }
 
-export function createCoursePageSuccess(coursePage) {
-  return {type: types.CREATE_COURSEPAGE_SUCCESS, coursePage};
-}
-
-export function updateCoursePageSuccess(coursePage) {
-  return {type: types.UPDATE_COURSEPAGE_SUCCESS, coursePage};
-}
-
 export function loadCoursePages() {
   return function (dispatch) {
     dispatch(beginAjaxCall());

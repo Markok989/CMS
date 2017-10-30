@@ -1,19 +1,22 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 const CourseFieldRow = ({coursePage}) => {
   return (
     <div className="jumbotron">
       <div>
-        Course title
+        {coursePage.courseTitle}
       </div>
       <br/>
       <br/>
       <br/>
       <div>
-        {coursePage.lessonTitle}
+        {coursePage.courseText}
       </div>
     </div>
   );
+};
+CourseFieldRow.propTypes = {
+  coursePage: PropTypes.array.isRequired
 };
 
 export default CourseFieldRow;

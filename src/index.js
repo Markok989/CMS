@@ -8,16 +8,14 @@ import routes from './routes';
 import {loadCourses} from './actions/coursesAction';
 import {loadQuizzes} from './actions/quizAction';
 import {loadCoursePages} from './actions/coursePageAction';
-import {loadJsLists} from './actions/javaScriptListAction';
-import {loadJsChaptersSuccess} from './actions/javaScriptChaptersAction';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const store = configureStore();
 store.dispatch(loadCourses());
 store.dispatch(loadQuizzes());
-store.dispatch(loadJsLists());
-store.dispatch(loadJsChaptersSuccess());
+store.dispatch(loadCoursePages());
+
 
 render(
   <Provider store={store}>

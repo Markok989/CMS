@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react';
 
-const CourseTableRow = ({coursePages}) => {
+const CourseTableRow = ({coursePage}) => {
   return (
     <div className="jumbotron">
       <tr>
         <td>
-          {coursePages.lessonTitle}
+          {coursePage.chapterTitle}
         </td>
       </tr>
     </div>

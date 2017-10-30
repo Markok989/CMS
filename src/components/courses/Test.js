@@ -1,10 +1,8 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
-import * as courseActions from '../../actions/coursesAction';
-import CourseCard from './CoursesCard';
 import TestList from './TestList';
 
-class Courses extends React.Component {
+class Test extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
@@ -15,9 +13,8 @@ class Courses extends React.Component {
 
     return (
       <div>
-        <h1>All Courses</h1>
         <div>
-          <CourseCard courses={courses}/>
+          <TestList courses={courses}/>
         </div>
         <br/>
         <br/>
@@ -26,25 +23,18 @@ class Courses extends React.Component {
   }
 }
 
-Courses.propTypes = {
+Test.propTypes = {
   courses: PropTypes.array.isRequired,
   course: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
-  console.log("provera za test" + JSON.stringify(state));
   return {
     courses: state.courses
   };
 }
 
-/*
-function mapDispatchtoProps(dispatch) {
-  return {
 
-  }
-}
-*/
-export default connect(mapStateToProps)(Courses);
+export default connect(mapStateToProps)(Test);
 
 //, mapDispatchtoProps, ako nema automtski se pravi

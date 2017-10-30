@@ -53,6 +53,11 @@ const Header = () => {
             playList
             </Link>
           </NavItem>
+          <NavItem>
+            <Link to="test" activeClassName="active">
+            Test
+            </Link>
+          </NavItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

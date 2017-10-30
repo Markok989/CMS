@@ -2,16 +2,388 @@ import delay from './delay';
 
 const jsChapters = [
   {
-    id: "id",
-    text: "Owerview"
+    id: "javascript-building-applications",
+    courseChaptet: "Java Script",
+    chapters: [
+      {
+        //kruzici
+        id: "Java_Script",
+        text: "Owerview",
+        lessonList: [
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "id1",
-    text: "Baisc Concepts"
+    id: "java-building-applications",
+    courseChaptet: "Java",
+    chapters: [
+      {
+        //kruzici
+        id: "Java_Script",
+        text: "Owerview",
+        lessonList: [
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "id2",
-    text: "Functions"
+    id: "c#-building-applications",
+    courseChaptet: "C# tutorial ",
+    chapters: [
+      {
+        //kruzici
+        id: "Java_Script",
+        text: "Owerview",
+        lessonList: [
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          },
+          {
+            // kockice
+            id: "1",
+            lessonName: "Lekcija 1",
+            lesson: [
+              {
+                // lekcija
+                lessonID: "11",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              },
+              {
+                // lekcija
+                lessonID: "12",
+                lessonTitle: "Naslov",
+                lessonText: "Prvi deo",
+                description: "Opis",
+                lessonNo: 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
 

@@ -3,18 +3,18 @@ import delay from './delay';
 
 const courses = [
     {
-        // prvi deo kurs
+        // prvi deo kurs kurs
         id: "javascript-building-applications",
         title: "Building Applications in JavaScript",
         category: "JavaScript",
         lesssons: [
             {
-                // drugi deo  lekcija thumbnail
+                // drugi deo  lekcija thumbnail lekcije
                 id: "javascript-building-applications",
                 lessonTitle: "test Building Applications in JavaScript",
                 lessonContent: [
                     {
-                        // treci deo sadrzaj lekcije
+                        // treci deo sadrzaj lekcije contnet 
                         lessonId: "javascript-building-applications",
                         id: "id",
                         lessonName: "Lesson Name",

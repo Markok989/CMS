@@ -5,6 +5,7 @@ import * as courseActions from '../../actions/coursesAction';
 import CourseField from './CourseField';
 import CourseTable from './CourseTable';
 
+import CoursePageForm from './CoursePageForm';
 
 class CoursePage extends React.Component {
 
@@ -20,15 +21,12 @@ class CoursePage extends React.Component {
       <div>
         <div>
           <div className="jumbotron">
-            <div>
-              {/*{coursePages.courseTitle}*/}
-            </div>
             <br/>
-            <CourseField coursePages={coursePages}/>
+            <CoursePageForm coursePages={coursePages}/>
             <br/>
             <br/>
             <div>
-              {/*{coursePages.courseText}*/}
+              {coursePages.courseTitle}
             </div>
           </div>
         </div>
@@ -52,6 +50,7 @@ CoursePage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
+  console.log("provera za test" + JSON.stringify(state));
   return {
     coursePages: state.coursePages
   };
