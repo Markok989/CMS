@@ -3,7 +3,7 @@ import delay from './delay';
 const courseChapters = [
   {
     id: "javascript-building-applications",
-    courseChaptet: "Java Script",
+    courseChapter: "Java Script",
     chapters: [
       {
         //kruzici
@@ -131,7 +131,7 @@ const courseChapters = [
   },
   {
     id: "java-building-applications",
-    courseChaptet: "Java",
+    courseChapter: "Java",
     chapters: [
       {
         //kruzici
@@ -259,7 +259,7 @@ const courseChapters = [
   },
   {
     id: "c#-building-applications",
-    courseChaptet: "C# tutorial ",
+    courseChapter: "C# tutorial ",
     chapters: [
       {
         //kruzici

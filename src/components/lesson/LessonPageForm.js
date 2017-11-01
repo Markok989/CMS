@@ -1,13 +1,13 @@
 import React, {PropTypes} from 'react';
 
-const LessonPageForm = ({coursePages}) => {
+const LessonPageForm = ({courseChapter}) => {
   return (
     <div>
       <p>Naslov Lekcije</p>
       <br/>
       <p>Tekst</p>
       <br/>
-      <p>{coursePages.courseTitle}</p>
+      <p>{courseChapter.courseTitle}</p>
       {
         /*
       {coursePages.map(coursePage =>
@@ -20,7 +20,7 @@ const LessonPageForm = ({coursePages}) => {
 };
 
 LessonPageForm.propTypes = {
-  coursePages: PropTypes.array.isRequired
+  courseChapter: PropTypes.array.isRequired
 };
 
 

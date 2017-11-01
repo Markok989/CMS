@@ -5,10 +5,10 @@ const CoursePageForm = ({coursePages}) => {
   return (
     <div>
       <p>Naslov</p>
-<br/>
+      <br/>
       <p>Tekst</p>
       <br/>
-      <p>{coursePages.courseTitle}</p>
+      <p></p>
       {
         /*
       {coursePages.map(coursePage =>

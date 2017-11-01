@@ -23,6 +23,7 @@ class CoursePage extends React.Component {
   render() {
     const {coursePages} = this.props;
 
+    //console.log(coursePages.courseTitle + "provera za naslov");
 
     return (
       <div>
@@ -62,13 +63,14 @@ CoursePage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
-  let coursePage = {id: '', courseTitle: '', courseText: ''};
+ // let coursePage = {id: '', courseTitle: '', courseText: ''};
 
   console.log("provera za test" + JSON.stringify(state));
   return {
-    coursePage: coursePage
+    coursePage: state.coursePage
   };
 }
+
 
 function mapDispatchToProps(dispatch) {
   return {
