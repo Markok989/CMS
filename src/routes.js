@@ -18,6 +18,7 @@ export default (
     <IndexRoute component={HomePage}/>
     <Route path="courses" component={Courses}/>
     <Route path="course" component={CoursePage}/>
+    <Route path="course/:id" component={CoursePage}/>
     <Route path="lesson" component={LessonPage}/>
     <Route path="quiz" component={QuizPage}/>
     <Route path="quizplay/:id" component={QuizPlay}/>

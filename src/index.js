@@ -7,7 +7,7 @@ import {Router, browserHistory} from 'react-router';
 import routes from './routes';
 import {loadCourses} from './actions/coursesAction';
 import {loadQuizzes} from './actions/quizAction';
-import {loadCoursePages} from './actions/coursePageAction';
+import {loadCoursePages} from './actions/coursePageActions';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 

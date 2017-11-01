@@ -1,7 +1,6 @@
 import React, {PropTypes} from 'react';
 
 
-
 const CoursePageFormList = ({coursePage}) => {
   return (
     <div>

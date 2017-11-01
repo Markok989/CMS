@@ -1,11 +1,10 @@
 import React, {PropTypes} from 'react';
-import CoursePageFormList from './CoursePageFormList';
 
-const CoursePageForm = ({coursePages}) => {
+const LessonPageForm = ({coursePages}) => {
   return (
     <div>
-      <p>Naslov</p>
-<br/>
+      <p>Naslov Lekcije</p>
+      <br/>
       <p>Tekst</p>
       <br/>
       <p>{coursePages.courseTitle}</p>
@@ -20,10 +19,10 @@ const CoursePageForm = ({coursePages}) => {
   );
 };
 
-CoursePageForm.propTypes = {
+LessonPageForm.propTypes = {
   coursePages: PropTypes.array.isRequired
 };
 
 
-export default CoursePageForm;
+export default LessonPageForm;
 

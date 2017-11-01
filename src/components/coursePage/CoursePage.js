@@ -1,7 +1,8 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 import {connect} from 'react-redux';
-import * as courseActions from '../../actions/coursesAction';
+import * as coursePageActions from '../../actions/coursePageActions';
+import {bindActionCreators} from 'redux';
 import CourseField from './CourseField';
 import CourseTable from './CourseTable';
 
@@ -12,10 +13,16 @@ class CoursePage extends React.Component {
   constructor(props, context) {
     super(props, context);
 
+    this.state = {
+      coursePage: Object.assign({}, props.coursePage)
+    };
+
   }
+
 
   render() {
     const {coursePages} = this.props;
+
 
     return (
       <div>
@@ -26,7 +33,11 @@ class CoursePage extends React.Component {
             <br/>
             <br/>
             <div>
-              {coursePages.courseTitle}
+              {
+                /*
+              <CourseField coursePages={coursePages} />
+              */
+              }
             </div>
           </div>
         </div>
@@ -46,14 +57,23 @@ class CoursePage extends React.Component {
 
 CoursePage.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  coursePages: PropTypes.array.isRequired
+  coursePages: PropTypes.array.isRequired,
+  coursePage: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
+  let coursePage = {id: '', courseTitle: '', courseText: ''};
+
   console.log("provera za test" + JSON.stringify(state));
   return {
-    coursePages: state.coursePages
+    coursePage: coursePage
   };
 }
 
-export default connect(mapStateToProps)(CoursePage);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(coursePageActions, dispatch)
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(CoursePage);

@@ -79,6 +79,85 @@ const quizzes = [
         ]
       }
     ]
+  },
+  {
+    id: "quz-java-building-applications",
+    quizTitle: "Quiz Building Applications in Java",
+    cotent: "Java",
+    questions: [
+      {
+        id: "1",
+        question: "Question 1",
+        answers: [
+          {
+            questionId: "1",
+            id: "1.1",
+            label: "Answer 1",
+            isTrue: true
+          },
+          {
+            questionId: "1",
+            id: "1.2",
+            label: "Answer 2",
+            isTrue: false
+          },
+          {
+            questionId: "1",
+            id: "1.3",
+            label: "Answer 3",
+            isTrue: false
+          }
+        ]
+      },
+      {
+        id: "2",
+        question: "Question 2",
+        answers: [
+          {
+            questionId: "2",
+            id: "2.1",
+            label: "Answer 1",
+            isTrue: true
+          },
+          {
+            questionId: "2",
+            id: "2.2",
+            label: "Answer 3",
+            isTrue: false
+          },
+          {
+            questionId: "2",
+            id: "2.3",
+            label: "Answer 3",
+            isTrue: false
+          }
+        ]
+      },
+      {
+        id: "3",
+        question: "Question 3",
+        answers: [
+          {
+            questionId: "3",
+            id: "3.1",
+            label: "Answer 1",
+            isTrue: true
+          },
+          {
+            questionId: "3",
+            id: "3.2",
+            label: "Answer 2",
+            isTrue: false
+          },
+          {
+            questionId: "3",
+            id: "3.3",
+            label: "Answer 3",
+            isTrue: false
+          }
+        ]
+      }
+    ]
   }
   /*
   {

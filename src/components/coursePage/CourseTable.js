@@ -1,11 +1,11 @@
 import React from 'react';
 import CourseTableRow from './CourseTableRow';
 
-const CourseTable = ({coursePages}) => {
+const CourseTable = ({coursePages, chapters}) => {
   return (
     <div className="jumbotron">
-      {coursePages.map(coursePage =>
-        <CourseTableRow key={coursePage.id} coursePage={coursePage}/>
+      {coursePages.chapters.map((chapter) =>
+        <CourseTableRow key={chapter.id} chapter={chapter}/>
       )}
     </div>
   );

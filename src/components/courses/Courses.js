@@ -3,10 +3,13 @@ import {connect} from 'react-redux';
 import * as courseActions from '../../actions/coursesAction';
 import CourseCard from './CoursesCard';
 import TestList from './TestList';
+import {browserHistory} from 'react-router';
+
 
 class Courses extends React.Component {
   constructor(props, context) {
     super(props, context);
+
   }
 
 
@@ -15,8 +18,8 @@ class Courses extends React.Component {
 
     return (
       <div>
-        <h1>All Courses</h1>
         <div>
+          <h1>All Courses</h1>
           <CourseCard courses={courses}/>
         </div>
         <br/>

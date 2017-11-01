@@ -24,11 +24,6 @@ const Header = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="course" activeClassName="active">
-              Course Page
-            </Link>
-          </NavItem>
-          <NavItem>
             <Link to="lesson" activeClassName="active">
               Lesson Page
             </Link>
@@ -36,26 +31,6 @@ const Header = () => {
           <NavItem>
             <Link to="about" activeClassName="active">
               About Page
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="play" activeClassName="active">
-              Play Page
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="playContent" activeClassName="active">
-              PlayPageContent
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="playList" activeClassName="active">
-            playList
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="test" activeClassName="active">
-            Test
             </Link>
           </NavItem>
         </Nav>

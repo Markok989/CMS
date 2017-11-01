@@ -6,7 +6,7 @@ export function loadCoursePagesSuccess(coursePages) {
   return {type: types.LOAD_COURSEPAGES_SUCCESS, coursePages};
 }
 
-export function loadCoursePages() {
+export function  loadCoursePages() {
   return function (dispatch) {
     dispatch(beginAjaxCall());
     return coursePageAPI.getAllCoursePages().then(coursePages => {

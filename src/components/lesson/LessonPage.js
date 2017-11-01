@@ -1,6 +1,7 @@
 import React from 'react';
-import QuizPage from '../quiz/QuizPage';
 import {Link} from 'react-router';
+import {connect} from 'react-redux';
+import LessonPageForm from './LessonPageForm';
 
 class LessonPage extends React.Component {
   render() {
@@ -10,6 +11,8 @@ class LessonPage extends React.Component {
         <p>Lesson</p>
         <div>
           <p>Lesson content</p>
+          <br/>
+          <LessonPageForm coursePages={}/>
         </div>
         <br/>
         <br/>
@@ -25,4 +28,13 @@ class LessonPage extends React.Component {
   }
 }
 
-export default LessonPage;
+function mapStateToProps(state, ownProps) {
+  let coursePage = {id: '', courseTitle: '', courseText: ''};
+
+  console.log("provera za test" + JSON.stringify(state));
+  return {
+    coursePage: coursePage
+  };
+}
+
+export default connect(mapStateToProps)(LessonPage);

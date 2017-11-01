@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react';
 
-const CourseTableRow = ({coursePage}) => {
+const CourseTableRow = ({chapter}) => {
   return (
     <div className="jumbotron">
       <tr>
         <td>
-          {coursePage.chapterTitle}
+          {chapter.chapterTitle}
         </td>
       </tr>
     </div>
@@ -13,7 +13,7 @@ const CourseTableRow = ({coursePage}) => {
 };
 
 CourseTableRow.propTypes = {
-  coursePages: PropTypes.array.isRequired
+  chapter: PropTypes.array.isRequired
 };
 
 export default CourseTableRow;

@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-
+import {Link} from 'react-router';
 
 
 const CoursesCardRow = ({course}) => {
@@ -14,7 +14,9 @@ const CoursesCardRow = ({course}) => {
                   {course.title}
                 </div>
                 <div className="panel-body">
-                  picture/text proba
+                  <Link to={'/course/' + course.id}>
+                    picture/text proba
+                  </Link>
                 </div>
                 <div className="panel-footer">
                   {course.category}

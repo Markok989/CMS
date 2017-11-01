@@ -1,6 +1,6 @@
 import delay from './delay';
 
-const jsChapters = [
+const courseChapters = [
   {
     id: "javascript-building-applications",
     courseChaptet: "Java Script",
@@ -393,32 +393,32 @@ function replaceAll(str, find, replace) {
 }
 
 //This would be performed on the server in a real app. Just stubbing in.
-const generateId = (jsChapters) => {
-  return replaceAll(jsChapters.chapterName, ' ', '-');
+const generateId = (courseChapters) => {
+  return replaceAll(courseChapters.chapterName, ' ', '-');
 };
 
-class JsChaptersAPI {
-  static getAllJsChapters() {
+class CourseChaptersAPI {
+  static getAllCourseChapters() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(Object.assign([], jsChapters));
+        resolve(Object.assign([], courseChapters));
       }, delay);
     });
   }
 
 
-  static deleteJsChapters(JsChaptersId) {
+  static deleteCourseChapters(CourseChaptersId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const indexOfJsChaptersToDelete = jsChapters.findIndex(jsChapters => {
-          jsChapters.JsChaptersId == JsChaptersId;
+        const indexOfCourseChaptersToDelete = courseChapters.findIndex(courseChapters => {
+          courseChapters.CourseChaptersId == CourseChaptersId;
         });
-        jsChapters.splice(indexOfJsChaptersToDelete, 1);
+        courseChapters.splice(indexOfCourseChaptersToDelete, 1);
         resolve();
       }, delay);
     });
   }
 }
 
-export default JsChaptersAPI;
+export default CourseChaptersAPI;
 
