@@ -3,7 +3,7 @@ import {Route, IndexRoute} from 'react-router';
 import App from './components/App';
 import HomePage from './components/home/HomePage';
 import Courses from './components/courses/Courses';
-import CoursePage from './components/coursePage/CoursePage';
+import CoursePage from './components/coursePage/CoursePage1';
 //import LessonPage from './components/lesson/LessonPage';
 import QuizPage from './components/quiz/QuizPage';
 import QuizPlay from './components/quiz/Quiz';
