@@ -11,6 +11,7 @@ import {loadCoursePages} from './actions/coursePageActions';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+
 const store = configureStore();
 store.dispatch(loadCourses());
 store.dispatch(loadQuizzes());

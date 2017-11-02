@@ -14,13 +14,14 @@ class Courses extends React.Component {
 
 
   render() {
-    const {courses, course} = this.props;
+    const {courses, course, coursePages} = this.props;
 
     return (
       <div>
         <div>
           <h1>All Courses</h1>
           <CourseCard courses={courses}/>
+          <br/>
         </div>
         <br/>
         <br/>

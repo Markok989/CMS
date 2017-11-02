@@ -24,6 +24,11 @@ const Header = () => {
             </Link>
           </NavItem>
           <NavItem>
+            <Link to="course" activeClassName="active">
+              Course Page
+            </Link>
+          </NavItem>
+          <NavItem>
             <Link to="lesson" activeClassName="active">
               Lesson Page
             </Link>

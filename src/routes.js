@@ -4,7 +4,7 @@ import App from './components/App';
 import HomePage from './components/home/HomePage';
 import Courses from './components/courses/Courses';
 import CoursePage from './components/coursePage/CoursePage';
-import LessonPage from './components/lesson/LessonPage';
+//import LessonPage from './components/lesson/LessonPage';
 import QuizPage from './components/quiz/QuizPage';
 import QuizPlay from './components/quiz/Quiz';
 import AboutPage from './components/about/AboutPage';
@@ -19,7 +19,7 @@ export default (
     <Route path="courses" component={Courses}/>
     <Route path="course" component={CoursePage}/>
     <Route path="course/:id" component={CoursePage}/>
-    <Route path="lesson" component={LessonPage}/>
+    {/*<Route path="lesson" component={LessonPage}/>*/}
     <Route path="quiz" component={QuizPage}/>
     <Route path="quizplay/:id" component={QuizPlay}/>
     <Route path="about" component={AboutPage}/>
